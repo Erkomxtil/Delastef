@@ -49,5 +49,98 @@ table {
 }
 
 body {
+  margin: 20px;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
   background-color: red;
+  height: 50px;
+  width: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav span {
+  height: 3px;
+  width: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #000;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Freckle Face', cursive;
+  font-size: 2rem;
+  -webkit-animation: intro 1s;
+          animation: intro 1s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#menu {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  opacity: 0;
+  width: 50px;
+  -webkit-transform: translateY(-54%);
+          transform: translateY(-54%);
+  height: 51px;
+}
+
+#menu:checked ~ nav span:nth-child(1) {
+  -webkit-transform: rotate(45deg) translateX(4px) translateY(5px);
+          transform: rotate(45deg) translateX(4px) translateY(5px);
+}
+
+#menu:checked ~ nav span:nth-child(2) {
+  display: none;
+}
+
+#menu:checked ~ nav span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
