@@ -92,6 +92,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 nav span {
@@ -118,6 +120,8 @@ header h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 #menu {
@@ -129,6 +133,13 @@ header h1 {
   -webkit-transform: translateY(-54%);
           transform: translateY(-54%);
   height: 51px;
+  cursor: pointer;
+}
+
+#menu:checked ~ nav {
+  height: 100%;
+  width: 100%;
+  border-radius: unset;
 }
 
 #menu:checked ~ nav span:nth-child(1) {
@@ -143,4 +154,53 @@ header h1 {
 #menu:checked ~ nav span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+#menu:checked ~ nav .icon {
+  display: block;
+  position: absolute;
+  opacity: 1;
+  opacity: 1;
+  height: 40px;
+  width: 40px;
+  z-index: 2;
+  border-radius: 50%;
+  -webkit-transition-delay: 5s;
+          transition-delay: 5s;
+  -webkit-transition: all 5s;
+  transition: all 5s;
+}
+
+#menu:checked ~ nav .icon_1 {
+  top: 35%;
+}
+
+#menu:checked ~ nav .icon_2 {
+  left: 40%;
+}
+
+#menu:checked ~ nav .icon_3 {
+  left: 60%;
+}
+
+#menu:checked ~ h1 {
+  margin-top: -100px;
+}
+
+.icon {
+  display: none;
+  opacity: 0;
+  font-size: 10px;
+  -webkit-transition-delay: 5s;
+          transition-delay: 5s;
+  -webkit-transition: all 5s;
+  transition: all 5s;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.icon img {
+  color: #fff;
 }
