@@ -1,0 +1,9 @@
+.slider_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider_wrapper img {
+  width: 100%;
+}
