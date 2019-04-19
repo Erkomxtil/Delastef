@@ -39,13 +39,11 @@ let counter = function (){
   })
 }
 
-/* Pour l'affichage dynamique des images */
-let countVar = 0
-let countFunction = function(){
-  let countTiming = setInterval(function(){ 
-    return countVar = countVar++
-  },1000)
-}
-
-console.log(countVar)
 counter()
+
+/* Pour l'affichage dynamique des images */
+var i= 0
+function augmenter() {
+  i++
+}
+console.log(setInterval("augmenter()", 1000))

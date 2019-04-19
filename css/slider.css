@@ -11,6 +11,18 @@ body {
   position: relative;
 }
 
+.slider_wrapper button {
+  background-color: transparent;
+  color: white;
+  border: unset;
+  font-size: 3rem;
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 3px;
+}
+
+.slider_wrapper button:focus {
+  outline: none;
+}
+
 .slider_wrapper .btn_back {
   position: absolute;
   top: 50%;
