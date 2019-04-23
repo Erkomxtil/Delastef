@@ -44,6 +44,6 @@ counter()
 /* Pour l'affichage dynamique des images */
 var i= 0
 function augmenter() {
-  i++
+  return i++
 }
 console.log(setInterval("augmenter()", 1000))
