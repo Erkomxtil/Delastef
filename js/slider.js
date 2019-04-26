@@ -38,12 +38,19 @@ let counter = function (){
     }
   })
 }
-
 counter()
 
 /* Pour l'affichage dynamique des images */
-var i= 0
 function augmenter() {
-  return i++
+ if(count < 2){
+    count++
+    console.log(count)
+    if(sliders[count] != undefined){
+      sourceImg.src= sliders[count].src
+    }
+ } else if (count === 2){
+   count = 0
+   sourceImg.src= sliders[count].src
+ }
 }
-console.log(setInterval("augmenter()", 1000))
+setInterval("augmenter()", 5000)
