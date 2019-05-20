@@ -44,7 +44,6 @@ counter()
 function augmenter() {
  if(count < 2){
     count++
-    console.log(count)
     if(sliders[count] != undefined){
       sourceImg.src= sliders[count].src
     }

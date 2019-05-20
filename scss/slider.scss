@@ -32,4 +32,17 @@ body {
     top: 50%;
     right: 0;
   }
+  .btn_wrapper{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+    .btn_down {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+      background-color: #ffffff;
+      border-radius: 50%;
+    }
+  }
 }
