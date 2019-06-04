@@ -69,16 +69,16 @@ header h1{
       width: 40px;
       z-index: 2;
       border-radius: 50%;
-      transition-delay: 5s;
-      transition: all 5s;
+      transition-delay: .5s;
+      transition: all .5s;
       &_1 {
         top: 35%;
       }
       &_2 {
-        left: 40%;
+        left: 35%;
       }
       &_3 {
-        left: 60%;
+        left: 65%;
       }
     }
   }

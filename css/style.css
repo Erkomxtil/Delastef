@@ -165,10 +165,10 @@ header h1 {
   width: 40px;
   z-index: 2;
   border-radius: 50%;
-  -webkit-transition-delay: 5s;
-          transition-delay: 5s;
-  -webkit-transition: all 5s;
-  transition: all 5s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 #menu:checked ~ nav .icon_1 {
@@ -176,11 +176,11 @@ header h1 {
 }
 
 #menu:checked ~ nav .icon_2 {
-  left: 40%;
+  left: 35%;
 }
 
 #menu:checked ~ nav .icon_3 {
-  left: 60%;
+  left: 65%;
 }
 
 #menu:checked ~ h1 {
